@@ -90,8 +90,8 @@ export default function EditProduct({setOpenEditProduct}:props) {
   
       
   return (
-    <div className="bg-black/50 w-full h-[100vh] fixed top-0 left-0 " >
-        <div className='min-w-[300px] min-h-[350px] bg-white flex justify-center items-center fixed top-[30%] left-[2%] rounded-lg'>
+    <div className="bg-black/50 w-full flex justify-center items-center h-[100vh] fixed top-0 left-0  " >
+        <div className='min-w-[300px] min-h-[350px] bg-white flex justify-center items-center mx-auto rounded-lg'>
             <form action="" onSubmit={handleCreateData}  className=" relative mx-auto  py-8 px-2 flex flex-col justify-center items-center gap-y-2 "  >
                 <button onClick={()=>setOpenEditProduct(false)} className="absolute top-0 right-5 text-green-600 text-3xl font-semibold hover:text-red-600 transition-all duration-300 transform hover:scale-125 "><CloseIcon/></button>
                 <input placeholder="Title" type="text" value={title} className="w-[90%] px-2 py-3 rounded-xl border hover:border-green-600 transition-all duration-300" onChange={(e:any)=>setTitle(e.target.value)}/>

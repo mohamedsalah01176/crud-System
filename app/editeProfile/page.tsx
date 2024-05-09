@@ -42,13 +42,6 @@ export default function page() {
         }
 
     }
-  
-
-
-
-
-
-    
 
   const handleClick = () => {
     setOpen(true);
